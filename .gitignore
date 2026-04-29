@@ -3,8 +3,8 @@ cv.md
 data/applications.md
 data/pipeline.md
 data/scan-history.tsv
-reports/*.md
-!reports/.gitkeep
+# reports/ is now tracked — incubator strategy reports are the project deliverable
+# (was reports/*.md ignored in the job-era system)
 output/*
 !output/.gitkeep
 batch/logs/*
