@@ -1,0 +1,23 @@
+# MUTBI (Manipal Universal Technology Business Incubator, Manipal)
+
+- **URL**: https://mutbimanipal.org/ ; https://www.manipal.edu/mu/important-links/innovation-entrepreneruship/mutbi.html
+- **Apply**: mutbimanipal.org; mutbi.mit@manipal.edu; +91-820-2925051. Pre-application questionnaire then full app.
+- **Intake model**: Rolling — committee evaluates within 7 working days of pre-app.
+- **Next deadline (60-90d)**: rolling — next IC cycle.
+- **Reapply policy**: not surfaced.
+- **Selection committee / board (public)**:
+  - Dr. Ranjan Pai — Chairman, MUTBI Board of Governors
+  - VC, MAHE — Vice Chairman
+  - Registrar, MAHE — Academic Rep
+  - DST Adviser (Scientist G) — Govt rep
+  - VP & Head-India BU, Infosys — Industry rep
+  - CEO, Manipal Dot Net — R&D Expert
+  - Dr. Santhosha Rao — CEO, MUTBI
+  - Mrs. Ashmita — Manager
+  - Varun Venugopal Gupta — Mentor
+- **Stated criteria**: business plan strength, founder background, product-market fit; reviewed by expert committee.
+- **Funding/equity**: NIDHI-Seed Support and project-level funding; equity may apply per service+equity agreement.
+- **DPIIT/SISFS/AIM**: DST NIDHI; DPIIT linked.
+- **Sector/stage filter**: ELIGIBILITY GATED — students/alumni of MAHE group + select Karnataka colleges.
+- **Red flags**: hard affiliation gate.
+- **ThoughtKraft fit**: STRONG — founder is MIT Manipal alum (= MAHE group). Affiliation gate satisfied. Lead with MIT-Manipal alumni status in application; chairman Dr. Ranjan Pai chairs Manipal Group, alumni signal carries weight.

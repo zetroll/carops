@@ -1,0 +1,21 @@
+# IIM Calcutta Innovation Park (IIMCIP)
+
+- **URL**: https://iimcip.org/
+- **Apply**: https://iimcip.org/incubation/apply/
+- **Intake model**: Rolling main incubation + cohort programs (Udgama Accelerator, Bengal Business Accelerator, SIIP-Daimler, PRIF-Unnati).
+- **Next deadline (60-90d)**: rolling for general incubation; Udgama 2025 closed — Udgama 2026 cycle TBA.
+- **Reapply policy**: not surfaced.
+- **Selection committee / board (public)**:
+  - Dr. V.K. Rai — CEO, IIMCIP (ex-Naval Officer)
+  - Ajay Jain — Chairman
+  - Gaurav Kapoor — Chief Business Officer
+  - Kanchan Jain — Director, Board (MD & CEO Ascertis Credit)
+  - Prof. Alok Rai — Director, IIM Calcutta (ex-officio)
+  - Prof. Bhaskar Chakrabarti — Dean Academic, IIM Calcutta
+  - Investment Committee: Hari Balasubramanian, Sachin Oswal, Anuj Sharma, Uday Chatterjee, Sooraj Dhawan, Ajay Jain
+- **Stated criteria**: innovation, market traction, team, scalability, fundraising readiness; structured pitching to IC.
+- **Funding/equity**: seed via equity/debt; SISFS pass-through up to ₹50L; NIDHI-SSS up to ₹1Cr equity.
+- **DPIIT/SISFS/AIM**: DPIIT + SISFS + NIDHI-SSS recognized; Section 8 nonprofit.
+- **Sector/stage filter**: sector-agnostic; 1000+ startups supported. Bengal Business Accelerator restricts to WB-incorporated entities — main IIMCIP track is pan-India and accepts B2B SaaS.
+- **Red flags**: Bengal Business Accelerator restricts to WB; ThoughtKraft would target main IIMCIP track or Udgama.
+- **ThoughtKraft fit**: STRONG — pan-India, AI-friendly, IC structure mapped (named members above), NIDHI-SSS up to ₹1Cr is grant-friendly. Apply via main incubation track.

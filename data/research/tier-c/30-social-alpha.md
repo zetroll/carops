@@ -1,0 +1,21 @@
+# Social Alpha
+
+- **URL**: https://www.socialalpha.org/
+- **Apply**: program-specific pages (Techtonic, Agritech Innovations, Namma Bengaluru Challenge '26, Assistive Tech, Incubation Labs)
+- **Intake model**: Challenge-based + cohort accelerators. Multiple parallel programs (Techtonic, Quantum Master, Agritech, Climate, Assistive Tech, Namma Bengaluru Challenge).
+- **Next deadline (60-90d)**: Namma Bengaluru Challenge '26 active in 2026; Agritech Innovations Challenge 2nd edition active; exact deadlines not surfaced.
+- **Reapply policy**: not surfaced.
+- **Selection committee / board (public)**:
+  - Manoj Kumar — Founder, Chairman & CEO; ex-Tata Trusts
+  - Dr. Kshama Kothari Joshi — Director, Health & Wellness
+  - Nikhita Nadkarni — Director, Livelihoods & Prosperity
+  - Aathira Jayaraj — Director, Strategy & Partnerships
+  - Pulkit Aggarwal — Director, Investments & Syndications
+  - Prateek Jain — Director, Innovation Labs & Platforms
+  - Expert jury for each challenge (composition varies; not pre-published)
+- **Stated criteria**: innovation, market potential, deployment feasibility, team strength, IMPACT potential (social/environmental); science/tech-led products preferred.
+- **Funding/equity**: pilot grants up to ₹25L (Namma Bengaluru); Techtonic / Quantum etc. offer milestone grants; Social Alpha also runs equity seed funds.
+- **DPIIT/SISFS/AIM**: BIRAC-supported; DPIIT-recognized; channels DST/BIRAC grants.
+- **Sector/stage filter**: mission-driven / impact ventures only — health, agritech, livelihoods, climate, assistive tech, energy, manufacturing.
+- **Red flags**: strong impact-thesis filter; ₹1L MRR commerce SaaS for FMCG/hospitality clients is poor archetype match unless reframed.
+- **ThoughtKraft fit**: WEAK unless reframed as "MSME livelihoods enablement" via Livelihoods & Prosperity track (Nikhita Nadkarni's portfolio). With reframing, grants-only ₹25L is achievable. SKIP unless framing pivot is acceptable.
