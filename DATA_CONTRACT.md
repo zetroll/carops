@@ -1,69 +1,42 @@
-# Data Contract
+# Data Contract — incubator-ops
 
-This document defines which files belong to the **system** (auto-updatable) and which belong to the **user** (never touched by updates).
+This is a single-tenant fork. The career-ops "system layer / user layer" split was designed so an open-source repo could be auto-updated without touching personalization. This fork has diverged enough that the split is mostly informational — but it still helps the agent know what to treat as ground truth vs. what to update.
 
-## User Layer (NEVER auto-updated)
+## User layer (ground truth — never auto-edit)
 
-These files contain your personal data, customizations, and work product. Updates will NEVER modify them.
+The agent reads these but never modifies them without explicit user request.
 
-| File | Purpose |
-|------|---------|
-| `cv.md` | Your CV in markdown |
-| `config/profile.yml` | Your identity, targets, comp range |
-| `modes/_profile.md` | Your archetypes, narrative, negotiation scripts |
-| `article-digest.md` | Your proof points from portfolio |
-| `interview-prep/story-bank.md` | Your accumulated STAR+R stories |
-| `portals.yml` | Your customized company list |
-| `data/applications.md` | Your application tracker |
-| `data/pipeline.md` | Your URL inbox |
-| `data/scan-history.tsv` | Your scan history |
-| `data/follow-ups.md` | Your follow-up history |
-| `reports/*` | Your evaluation reports |
-| `output/*` | Your generated PDFs |
-| `jds/*` | Your saved job descriptions |
+- `kraft.md` — startup one-pager
+- `founder.md` — founder bio + warm-intro graph
+- `data/proof-points.md` — metrics, customer stories, modules
+- `data/needs-from-you.md` — pending fill items
+- `modes/_profile.md` — narrative archetypes + tier strategy + customer-logo policy
+- `config/profile.yml` (when written) — founder identity, contacts
+- `data/research/tier-{a,b,c}/*.md` — raw research artifacts (re-run quarterly)
 
-## System Layer (safe to auto-update)
+## Working layer (agent edits freely)
 
-These files contain system logic, scripts, templates, and instructions that improve with each release.
+The agent appends to these and produces new files within them as part of normal operation.
 
-| File | Purpose |
-|------|---------|
-| `modes/_shared.md` | Scoring system, global rules, tools |
-| `modes/oferta.md` | Evaluation mode instructions |
-| `modes/pdf.md` | PDF generation instructions |
-| `modes/scan.md` | Portal scanner instructions |
-| `modes/batch.md` | Batch processing instructions |
-| `modes/apply.md` | Application assistant instructions |
-| `modes/auto-pipeline.md` | Auto-pipeline instructions |
-| `modes/contacto.md` | LinkedIn outreach instructions |
-| `modes/deep.md` | Research prompt instructions |
-| `modes/ofertas.md` | Comparison instructions |
-| `modes/pipeline.md` | Pipeline processing instructions |
-| `modes/project.md` | Project evaluation instructions |
-| `modes/tracker.md` | Tracker instructions |
-| `modes/training.md` | Training evaluation instructions |
-| `modes/patterns.md` | Pattern analysis instructions |
-| `modes/followup.md` | Follow-up cadence instructions |
-| `modes/de/*` | German language modes |
-| `modes/fr/*` | French language modes |
-| `modes/ja/*` | Japanese language modes |
-| `modes/pt/*` | Portuguese language modes |
-| `modes/ru/*` | Russian language modes |
-| `CLAUDE.md` | Agent instructions |
-| `AGENTS.md` | Codex instructions |
-| `*.mjs` | Utility scripts |
-| `batch/batch-prompt.md` | Batch worker prompt |
-| `batch/batch-runner.sh` | Batch orchestrator |
-| `dashboard/*` | Go TUI dashboard |
-| `templates/*` | Base templates |
-| `fonts/*` | Self-hosted fonts |
-| `.claude/skills/*` | Skill definitions |
-| `docs/*` | Documentation |
-| `VERSION` | Current version number |
-| `DATA_CONTRACT.md` | This file |
+- `data/incubators.md` — application tracker
+- `data/pipeline.md` — pending URLs
+- `data/reapply-log.md` — rejection cooldown ledger
+- `data/ic-triggers.md` — outreach + IC contact log
+- `reports/incubators/*.md` — per-incubator strategy briefs
+- `reports/applications/*` — generated application packets
+- `reports/outreach/*` — drafted outreach messages
+- `reports/ic-prep/*` — IC pitch prep packets
 
-## The Rule
+## System layer (the rebuild, owned by the agent + repo)
 
-**If a file is in the User Layer, no update process may read, modify, or delete it.**
+Stable infrastructure. Agent modifies on intentional refactors only.
 
-**If a file is in the System Layer, it can be safely replaced with the latest version from the upstream repo.**
+- `modes/_shared.md` — system rules, scoring blocks
+- `modes/{evaluate,apply,reapply,ic-prep,outreach,pipeline}.md` — modes
+- `templates/states.yml` — canonical pipeline states
+- `CLAUDE.md`, `README.md`, `DATA_CONTRACT.md` — top-level docs
+- `package.json`, `.gitignore`, `flake.nix`, `flake.lock` — tooling
+
+## The single ground rule
+
+When in doubt, **never** modify a file in the user layer without surfacing the change to the user first. Working-layer files are fair game for append-style automation; system-layer files are fair game for refactors.

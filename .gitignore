@@ -1,35 +1,28 @@
-# Personal data (user fills these)
-cv.md
-data/applications.md
-data/pipeline.md
-data/scan-history.tsv
-# reports/ is now tracked — incubator strategy reports are the project deliverable
-# (was reports/*.md ignored in the job-era system)
-output/*
-!output/.gitkeep
-batch/logs/*
-!batch/logs/.gitkeep
-batch/batch-state.tsv
-batch/batch-input.tsv
-batch/tracker-additions/**/*.tsv
-!batch/tracker-additions/.gitkeep
-jds/*
-!jds/.gitkeep
+# =====================================================
+# incubator-ops .gitignore
+# =====================================================
+# Single-tenant fork — most "user data" is committed
+# (founder name, startup name, customer logos, etc. are
+# already in kraft.md / founder.md). What stays untracked
+# below is genuinely sensitive or generated.
 
-# User config and customization (never auto-updated)
-config/profile.yml
-portals.yml
-modes/_profile.md
-.update-dismissed
-.update-lock
-
-# Secrets (never commit — use .env.example as template)
+# Sensitive (never commit)
 .env
+data/dpiit-certificate.pdf
+data/llp-moa.pdf
+config/profile.yml
 
-# Generated
-.resolved-prompt-*
+# Generated reports / outputs
+reports/applications/
+reports/outreach/
+reports/ic-prep/
+output/
+
+# Tooling
 node_modules/
+package-lock.json
 bun.lock
+.resolved-prompt-*
 
 # OS
 .DS_Store
@@ -39,5 +32,3 @@ bun.lock
 # Claude Code local
 .claude/settings.local.json
 .claude/memory/
-career-dashboard
-package-lock.json

@@ -1,56 +1,73 @@
-# Career-Ops — Canonical States
-# Source of truth for career-ops (writer) and dashboard (reader).
-# Both systems MUST use these exact states.
+# incubator-ops — Canonical Pipeline States
 #
-# Rule: The status field in applications.md must contain EXACTLY
-# one of these values (case-insensitive). No markdown bold (**),
-# no dates, no extra text. Dates go in the date column.
+# Source of truth for status field in data/incubators.md.
+# Status MUST be exactly one of these labels (case-insensitive).
+# No markdown bold, no dates, no extra text. Dates go in their own columns.
 
 states:
+  - id: discovered
+    label: Discovered
+    description: URL added to pipeline; not yet evaluated
+
   - id: evaluated
     label: Evaluated
-    aliases: [evaluada]
-    description: Offer evaluated with report, pending decision
-    dashboard_group: evaluated
+    description: A-F brief written; pending decision to apply
+
+  - id: drafted
+    label: Drafted
+    description: Application packet drafted; founder reviewing before submit
 
   - id: applied
     label: Applied
-    aliases: [aplicado, enviada, aplicada, sent]
-    description: Application submitted
-    dashboard_group: applied
+    description: Application submitted to incubator
 
-  - id: responded
-    label: Responded
-    aliases: [respondido]
-    description: Company has responded (not yet interview)
-    dashboard_group: responded
+  - id: acknowledged
+    label: Acknowledged
+    description: Confirmation receipt from incubator
 
-  - id: interview
-    label: Interview
-    aliases: [entrevista]
-    description: Active interview process
-    dashboard_group: interview
+  - id: screening
+    label: Screening
+    description: Under initial review (typically a screening committee)
 
-  - id: offer
-    label: Offer
-    aliases: [oferta]
-    description: Offer received
-    dashboard_group: offer
+  - id: ic-pending
+    label: IC-Pending
+    description: Queued for next Investment / Selection Committee meeting
+
+  - id: ic-scheduled
+    label: IC-Scheduled
+    description: IC date set; pitch prep underway
+
+  - id: pitched
+    label: Pitched
+    description: Presented to IC; awaiting decision
+
+  - id: selected
+    label: Selected
+    description: Accepted into the program
 
   - id: rejected
     label: Rejected
-    aliases: [rechazado, rechazada]
-    description: Rejected by company
-    dashboard_group: rejected
+    description: Rejected by incubator (start cooldown clock in data/reapply-log.md)
 
-  - id: discarded
-    label: Discarded
-    aliases: [descartado, descartada, cerrada, cancelada]
-    description: Discarded by candidate or offer closed
-    dashboard_group: discarded
+  - id: waitlisted
+    label: Waitlisted
+    description: Not in this cohort; held for next
+
+  - id: reapply-pending
+    label: Reapply-Pending
+    description: Cooldown active; reapply scheduled in reports/intake-calendar.md
+
+  - id: withdrawn
+    label: Withdrawn
+    description: Founder pulled out (program turned out to be poor fit, equity-heavy, etc.)
 
   - id: skip
     label: SKIP
-    aliases: [no_aplicar, no aplicar, skip, monitor]
-    description: Doesn't fit, don't apply
-    dashboard_group: skip
+    description: Evaluated but doesn't meet capital policy or sector fit; no application
+
+dashboard_groups:
+  active: [evaluated, drafted, applied, acknowledged, screening, ic-pending, ic-scheduled, pitched]
+  closed-won: [selected]
+  closed-lost: [rejected, withdrawn, waitlisted]
+  pending: [discovered, reapply-pending]
+  skipped: [skip]
